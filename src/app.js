@@ -44,6 +44,10 @@ function displayWeatherCondition(response) {
   document.querySelector(
     ".current-temp .temperature"
   ).innerHTML = `${Math.round(response.data.main.temp)}`;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind-speed").innerHTML = Math.round(
+    response.data.wind.speed
+  );
 }
 
 function searchCity(city) {
