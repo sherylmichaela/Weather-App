@@ -55,7 +55,7 @@ ul {
   position: float;
 }
 
-.current-temp {
+.current-temp .temperature {
   font-size: 80px;
   position: float;
 }

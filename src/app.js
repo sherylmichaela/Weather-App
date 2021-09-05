@@ -41,9 +41,9 @@ dateDayTime.innerHTML = `${date} ${month} ${year}, ${day}, ${time}`;
 
 function displayWeatherCondition(response) {
   document.querySelector(".city-state").innerHTML = response.data.name;
-  document.querySelector(".current-temp").innerHTML = `${Math.round(
-    response.data.main.temp
-  )}°C`;
+  document.querySelector(
+    ".current-temp .temperature"
+  ).innerHTML = `${Math.round(response.data.main.temp)}`;
 }
 
 function searchCity(city) {
