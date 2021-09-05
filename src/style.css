@@ -8,7 +8,6 @@
   border: 1px solid black;
   border-radius: 25px;
   color: #fff;
-  width: 50%;
   max-width: 700px;
   padding: 50px;
   margin: 30px auto;
@@ -23,52 +22,70 @@ h1 {
   padding-top: 15px;
 }
 
-.today {
-  margin-top: 35px;
-  margin-bottom: -187px;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .fa-cloud-moon {
-  font-size: 125px;
+  font-size: 120px;
+  position: relative;
+  top: 8px;
 }
 
 .today-main-details {
-  margin-top: 35px;
+  position: relative;
+  top: 5px;
+  left: -15px;
+}
+
+.today-main-details ul {
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.today-main-details li {
+  list-style: none;
+  line-height: 1;
 }
 
 .date-day-time {
   font-size: 12px;
-  text-align: justify-all;
-  position: relative;
-  top: -230px;
-  left: 154px;
+  text-align: center;
+  position: float;
 }
 
 .current-temp {
   font-size: 80px;
+  position: float;
+}
+
+.current-temp .units {
   position: relative;
-  top: -160px;
-  left: -31px;
+  font-size: 16px;
+  top: -44px;
+  left: 7px;
 }
 
 .city-state {
   font-size: 20px;
-  position: relative;
-  top: -129px;
-  left: -170px;
+  position: float;
 }
 
 .today-other-details {
   font-size: 15px;
   font-weight: lighter;
-  width: 200px;
   position: relative;
-  top: -252px;
-  left: 418px;
+  top: 35px;
+}
+
+.today-other-details li {
+  list-style: none;
+  text-align: left;
 }
 
 .five-day-forecast {
-  margin-top: -50px;
+  margin-top: 32px;
 }
 
 .row {
