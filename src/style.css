@@ -60,6 +60,19 @@ ul {
   position: float;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+.today-main-details .active {
+  color: white;
+  cursor: default;
+}
+
+.today-main-details .active:hover {
+  text-decoration: none;
+}
+
 .current-temp .units {
   position: relative;
   font-size: 16px;
