@@ -27,10 +27,10 @@ ul {
   padding: 0;
 }
 
-.fa-cloud-moon {
-  font-size: 120px;
+#icon {
   position: relative;
-  top: 8px;
+  top: 15px;
+  left: 30px;
 }
 
 .today-main-details {
@@ -85,7 +85,7 @@ ul {
 }
 
 .five-day-forecast {
-  margin-top: 32px;
+  margin-top: 30px;
 }
 
 .row {

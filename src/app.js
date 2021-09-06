@@ -40,6 +40,7 @@ let time = now.toLocaleString("en-US", {
 dateDayTime.innerHTML = `${date} ${month} ${year}, ${day}, ${time}`;
 
 function displayWeatherCondition(response) {
+  console.log(response.data);
   document.querySelector(".city-state").innerHTML = response.data.name;
   document.querySelector(
     ".current-temp .temperature"
@@ -48,6 +49,21 @@ function displayWeatherCondition(response) {
   document.querySelector("#wind-speed").innerHTML = Math.round(
     response.data.wind.speed
   );
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+  document
+    .querySelector("#icon")
+    .setAttribute("alt", `${response.data.weather[0].description}`);
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 
 function searchCity(city) {
